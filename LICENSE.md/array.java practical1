@@ -1,0 +1,29 @@
+import java.util.*;
+class array
+{ boolean array123( int a[],int n)
+{int i;
+for(i=0;i<n;i++)
+{if(a[i]==1 && a[i+1]==2 && a[i+2]==3)
+    return(true);
+    }
+ return(false);
+}
+}
+class main
+{
+ public static void main(String args[])
+{int a[],n,i;
+boolean c;
+array ab = new array();
+Scanner input = new Scanner (System.in);
+System.out.println("Enter size");
+n= input.nextInt();
+a=new int[n];
+System.out.print("enter elements");
+for(i=0;i<n;i++)
+     a[i] = input.nextInt();
+     c = ab.array123(a,n);
+     System.out.println(c);
+
+}
+        }
